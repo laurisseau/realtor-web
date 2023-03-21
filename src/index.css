@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header-box {
+  color: #ffffff;
+  width: 60%;
+  text-align: left;
+}
+
+.red {
+  border: 1px solid red;
+}
+
+.header-box h1 {
+  font-size: 70px;
+  font-weight: 400;
+}
+
+button {
+  background-color: #c8d8e4;
+  border-collapse: collapse;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 42px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.realtor-img {
+  width: 50%;
+}
+
+.left-header-box {
+  width: 50%;
+}
+.container-img {
+  margin-top: 20px;
+  position: relative;
+  width: 300px;
+  max-width: 300px;
+}
+
+.overlay {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(70deg, black, rgb(204, 204, 204));
+  opacity: 0.5;
+  z-index: -0;
+}
+
+.container-img button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #c8d8e4;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container-img button:hover {
+  background-color: #2b6777;
+  transition: 0.5s;
+}
+
+.contact {
+ 
+  border-radius: 20px;
+}
+
+.left-contact {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 50%;
+  height: 500px;
+  background-color: #fefefe;
+  margin: 0px;
+  text-align: left;
+}
+
+.contact ul {
+  line-height: 300%;
+  font-size: 18px;
+}
+
+.contact input {
+  margin-bottom: 30px;
+}
+
+.contact button {
+  border-radius: 10px;
+}
+
+.right-contact {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 50%;
+  height: 500px;
+  background-color: #2b6777;
+  margin: 0px;
+}
+
+input[type="text"] {
+  border-radius: 20px;
+  border: 1px solid #c8d8e4;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+input[type="text"]::placeholder {
+  color: #c8d8e4;
+  opacity: 0.8;
+}
+
+input[type="text"]:focus {
+  background-color: white;
+  outline-width: 0;
+  outline: none;
+  border: none;
+}
+
+textarea[type="textarea"] {
+  border-radius: 20px;
+  border: 1px solid #c8d8e4;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+textarea[type="textarea"]::placeholder {
+  color: #c8d8e4;
+  opacity: 0.8;
+}
+
+textarea[type="textarea"]:focus {
+  background-color: white;
+  outline-width: 0;
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .realtor-img {
+    width: 100%;
+    height: 500px;
+  }
+
+  .left-header-box {
+    width: 100%;
+  }
+
+  .header-box h1 {
+    font-size: 50px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .left-contact {
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 400px;
+  }
+
+  .right-contact {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    width: 100%;
+    height: 450px;
+  }
+}
